@@ -1,0 +1,41 @@
+﻿@page "/add"
+
+@using Bookmarker.Data
+@using Bookmarker.Services
+@inject BookmarkService BookService
+
+
+<h1>Add Bookmark</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@code{
+
+    protected Uri uri;
+
+    protected async Task Add()
+    {
+        _ = await BookService.AddAsync(uri);
+    }
+
+}
